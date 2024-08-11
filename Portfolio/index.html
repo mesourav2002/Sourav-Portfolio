@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sourav Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/11d6d64daf.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="img"><img src="./assets/dp.png" alt="" /></div>
+      <div class="container">
+        <nav>
+          <h1 class="logo">
+            <a href="#"
+              ><img src="./assets/logo.svg" style="color: red" alt=""
+            /></a>
+          </h1>
+          <ul id="sidemenu">
+            <li onclick="closemenu()"><a href="#">HOME</a></li>
+            <li onclick="closemenu()"><a href="#about">ABOUT</a></li>
+            <li onclick="closemenu()"><a href="#services">SERVICE</a></li>
+            <li onclick="closemenu()"><a href="#portfolio">PORTFOLIO</a></li>
+            <li onclick="closemenu()"><a href="#contact">CONTACT</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i id="bar" class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p class="type">UX/UX Designer</p>
+          <h1 class="drop-in">Hi, I'm <span>Sourav</span> Kumar</h1>
+          <h1 class="drop-in-2">Dash From Odisha</h1>
+          <div class="cvd" onclick="cvDownload()">
+            <a href="./assets/Sourav dash CV.pdf" download class="d-btn"
+              >Download CV</a
+            >
+          </div>
+          <div id="cvd-msg"></div>
+        </div>
+      </div>
+    </div>
+    <!--! ------------------------ About----------------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./assets/dp.png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p style="text-align: center">
+              Hello! I'm Sourav Kumar Dash , Full Stack Web Developer
+              specializing in the MERN stack, adept in React, and i am
+              Proficient in HTML and CSS, javascript with a strong
+              problemsolving mindset and a collaborative approach. Quick to
+              adapt to new technologies, making me a valuable asset in dynamic
+              web development environments.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skill
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>HTML/CSS/JAVASCRIPT</span><br />Design Static And
+                  Dynamic Web Page
+                </li>
+                <li>
+                  <span>REACT/BootStrap</span><br />Create Single Page
+                  Applications
+                </li>
+                <li>
+                  <span>NodeJs/ExpressJS/Mangodb</span><br />Using Node And
+                  Express Connect With Database
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web interfaces</li>
+                <li><span>Web Development</span><br />Web app Development</li>
+                <li>
+                  <span>App Development</span><br />Building SPA using React
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2020-2023</span><br />B.tech(EE) from Balasore College
+                  of Engineering & Technology
+                </li>
+                <li>
+                  <span>2017-2020</span><br />Diploma(EE) from RIT Balasore
+                </li>
+                <li>
+                  <span>2017</span><br />School(10th) from Panchyat High School
+                  Padabadagan
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--! ------------------------ Services ----------------------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Using of Html , css and javascript create static and dynamic web
+              pages and validations .
+            </p>
+            <a href="#contact">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>UI/UX</h2>
+            <p>
+              Using of React BootStrap html css javascrpi Createing Single Page
+              Applications .
+            </p>
+            <a href="#contact">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>Mern Projects</h2>
+            <p>
+              Using React , Mongodb , NodeJs , ExpressJS create mern project to
+              store users data with validations .
+            </p>
+            <a href="#contact">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--! ------------------------ Portfolio ----------------------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="./assets/oneplus.png" alt="" height="100%" />
+            <div class="layer">
+              <h3>OnePlus 12R</h3>
+              <p>This Page is OnePlus12R Phone Static Website</p>
+              <a target="_blank" href="https://sourav-oneplus.netlify.app/"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./assets/calculator.png" alt="" height="100%" />
+            <div class="layer">
+              <h3>Calculator</h3>
+              <p>This a useable Calculator users can use.</p>
+              <a href="https://sourav-calculatorr.netlify.app/"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./assets/youtube.png" alt="" height="100%" />
+            <div class="layer">
+              <h3>Youtube</h3>
+              <p>This is a youtube static home page.</p>
+              <a target="_blank" href="https://sourav-youtubee.netlify.app/"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work hidden show">
+            <img src="./assets/shadi.png" alt="" height="100%" />
+            <div class="layer">
+              <h3>Shadi.Com</h3>
+              <p>This is indian shadi.com static page website.</p>
+              <a target="_blank" href="https://sourav-shadi.netlify.app/"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work hidden show">
+            <img src="./assets/freeze.png" alt="" height="100%" />
+            <div class="layer">
+              <h3>Freeze</h3>
+              <p>This is a Freeze static website .</p>
+              <a target="_blank" href="https://sourav-freeeze.netlify.app/"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work hidden show">
+            <img src="./assets/freeze.png" alt="" height="100%" />
+            <div class="layer">
+              <h3>Knight Bite</h3>
+              <p>
+                This is a Knight Bite Website and its a static page user can see
+                foods.
+              </p>
+              <a target="_blank" href="#"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work hidden show">
+            <img src="./assets/freeze.png" alt="" height="100%" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>The App Contents you the talentsd people around the world</p>
+              <a target="_blank" href="#"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work hidden show">
+            <img src="./assets/freeze.png" alt="" height="100%" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>The App Contents you the talentsd people around the world</p>
+              <a target="_blank" href="#"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work hidden show">
+            <img src="./assets/light.png" alt="" height="100%" />
+            <div class="layer">
+              <h3>Light On Off</h3>
+              <p>This is a Light On Off Switch User Can Control the Light.</p>
+              <a href="https://sourav-light.netlify.app/" target="_blank"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work hidden show">
+            <img src="./assets/amazon.png" alt="" height="100%" />
+            <div class="layer">
+              <h3>Amazon</h3>
+              <p>This is a Static Web Page , Amazon Website.</p>
+              <a href="https://soura-amazon.netlify.app/" target="_blank"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a
+          href="#portfolio"
+          class="btn"
+          id="loadMoreBtn"
+          onclick="loadMoreBtn()"
+          >See more</a
+        >
+      </div>
+    </div>
+    <!--! ------------------------ Contact ----------------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i> me.souravdash@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone-flip"></i> 6371396500</p>
+            <div class="social-icons">
+              <a
+                target="_blank"
+                href="https://www.facebook.com/smartboy.rocky.9256?mibextid=ZbWKwL"
+              >
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a
+                target="_blank"
+                href="https://x.com/Sourav05042002?t=88RAnS1vXavYAOniw3w2jw&s=09"
+              >
+                <i class="fab fa-twitter-square"></i
+              ></a>
+              <a
+                target="_blank"
+                href="https://www.instagram.com/i_am_sourav_dash?igsh=MWY0MHhyd2VndDY2aA=="
+              >
+                <i class="fab fa-instagram"></i
+              ></a>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/sourav-kumar-dash-740397271?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              >
+                <i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+            <a
+              target="_blank"
+              href="./assets/Sourav dash CV.pdf"
+              download
+              class="btn btn2"
+              >Download</a
+            >
+          </div>
+          <div class="contact-right">
+            <form
+              onsubmit="formSubmit(event)"
+              name="submit-to-google-sheet"
+              action="#"
+            >
+              <input
+                id="u"
+                type="text"
+                name="Name"
+                placeholder="Enter Your Name"
+                required
+              />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Enter Your Email"
+                required
+              />
+              <input
+                type="tel"
+                name="Number"
+                placeholder="Enter Your Number"
+                pattern="[6-9]{1}[0-9]{9}"
+                required
+              />
+              <textarea
+                name="Message"
+                id=""
+                rows="6"
+                placeholder="Enter Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>
+        Copyright Sourav. Made with <i class="fa-solid fa-heart"></i> by Easy
+        Sourav Dash
+      </p>
+    </div>
+    <script src="./App.js"></script>
+  </body>
+</html>
